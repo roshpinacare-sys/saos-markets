@@ -1,0 +1,19 @@
+{
+  "name": "saos-markets",
+  "version": "1.0.0",
+  "description": "הבורסה-המדומה של-המדינה-הכלכלית: מדדי-שווקים-מובילים דטרמיניסטיים + אוצר-המשרדים + מנוע-הווליום של-הדקס שלנו",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "cycle": "bun run/cycle.ts --cycles 24 --out run/state",
+    "cycle:hour": "bun run/cycle.ts --cycles 60 --out run/state"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": { "bun": ">=1.1.0" }
+}
