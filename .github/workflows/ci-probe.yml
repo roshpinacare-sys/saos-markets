@@ -1,9 +1,0 @@
-name: ci-probe
-on:
-  workflow_dispatch:
-jobs:
-  probe:
-    runs-on: ubuntu-latest
-    steps:
-      - name: hello
-        run: echo "probe ok on ${{ github.sha }}"
